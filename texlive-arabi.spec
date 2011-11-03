@@ -1,3 +1,9 @@
+# revision 22550
+# category Package
+# catalog-ctan /language/arabic/arabi
+# catalog-date 2007-02-23 23:22:37 +0100
+# catalog-license lppl
+# catalog-version 1.1
 Name:		texlive-arabi
 Version:	1.1
 Release:	1
@@ -248,6 +254,7 @@ text may be copied from them and pasted elsewhere.
 %doc %{_texmfdistdir}/doc/latex/arabi/testplaintex.pdf
 %doc %{_texmfdistdir}/doc/latex/arabi/testplaintex.tex
 %doc %{_texmfdistdir}/doc/latex/arabi/user_guide.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -258,3 +265,5 @@ text may be copied from them and pasted elsewhere.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
