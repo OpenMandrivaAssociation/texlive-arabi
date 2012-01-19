@@ -1,12 +1,12 @@
-# revision 22550
+# revision 25095
 # category Package
 # catalog-ctan /language/arabic/arabi
-# catalog-date 2007-02-23 23:22:37 +0100
+# catalog-date 2011-12-04 22:44:34 +0100
 # catalog-license lppl
 # catalog-version 1.1
 Name:		texlive-arabi
 Version:	1.1
-Release:	2
+Release:	3
 Summary:	(La)TeX support for Arabic and Farsi, compliant with Babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/arabic/arabi
@@ -20,14 +20,15 @@ Requires(post):	texlive-kpathsea
 
 %description
 The package provides the Arabic and Farsi script support for
-TeX without the need of any external pre-processor. The bi-
-directional capability supposes that the user has a TeX engine
-that knows the four primitives \beginR, \endR, \beginL and
-\endL. That is the case in both the TeX--XeT and e-TeX engines.
-Arabi will accept input in several 8-bit encodings, including
-UTF-8. Arabi can make use of a wide variety of Arabic and Farsi
-fonts; PDF files generated using Arabi may be searched, and
-text may be copied from them and pasted elsewhere.
+TeX without the need of any external pre-processor, and in a
+way that is compatible with babel. The bi-directional
+capability supposes that the user has a TeX engine that knows
+the four primitives \beginR, \endR, \beginL and \endL. That is
+the case in both the TeX--XeT and e-TeX engines. Arabi will
+accept input in several 8-bit encodings, including UTF-8. Arabi
+can make use of a wide variety of Arabic and Farsi fonts; PDF
+files generated using Arabi may be searched, and text may be
+copied from them and pasted elsewhere.
 
 %post
     %{_sbindir}/texlive.post
