@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-arabi
 Version:	1.1
-Release:	11
+Release:	12
 Summary:	(La)TeX support for Arabic and Farsi, compliant with Babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/arabic/arabi
