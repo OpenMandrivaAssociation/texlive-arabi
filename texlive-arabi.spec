@@ -5,8 +5,8 @@ Summary:	(La)TeX support for Arabic and Farsi, compliant with Babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/arabic/arabi
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/arabi.r44662.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/arabi.doc.r44662.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/arabi.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/arabi.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
