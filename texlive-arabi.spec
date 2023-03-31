@@ -1,6 +1,6 @@
 Name:		texlive-arabi
 Version:	44662
-Release:	1
+Release:	2
 Summary:	(La)TeX support for Arabic and Farsi, compliant with Babel
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/arabic/arabi
