@@ -3,7 +3,7 @@ Version:	44662
 Release:	2
 Summary:	(La)TeX support for Arabic and Farsi, compliant with Babel
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/arabic/arabi
+URL:		https://www.ctan.org/tex-archive/language/arabic/arabi
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/arabi.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/arabi.doc.r%{version}.tar.xz
