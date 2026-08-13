@@ -1,9 +1,10 @@
 %global tl_name arabi
 %global tl_revision 79618
+%global tl_version 1.1
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	1.1
+Version:	%{tl_version}
 Release:	%{tl_revision}.1
 Summary:	(La)TeX support for Arabic and Farsi, compliant with Babel
 Group:		Publishing
@@ -13,7 +14,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/arabi.r%{tl_revi
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/arabi.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 The package provides an Arabic and Farsi script support for TeX without
@@ -26,3 +28,10 @@ make use of a wide variety of Arabic and Farsi fonts, and provides one
 of its own. PDF files generated using Arabi may be searched, and text
 may be copied from them and pasted elsewhere.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from arabi:
+Map arabi.map
+TL_DROPIN_EOF
